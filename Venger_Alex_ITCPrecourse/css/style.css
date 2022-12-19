@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  /* includes padding and border in total width*/
 }
 
 html {
@@ -215,11 +214,11 @@ li:hover {
 
 .carousel-item,
 .carousel-item-hidden {
-  display: none; /* hides images not being viewed */
+  display: none; 
 }
 
 .carousel-item-visible {
-  display: block; /* shows current image */
+  display: block;
 }
 
 .carousel-item img {
@@ -230,9 +229,9 @@ li:hover {
 .carousel-actions {
   display: flex;
   width: 600px;
-  justify-content: space-between; /* put space between the buttons */
-  position: absolute; /* puts buttons on top of image carousel */
-  top: 50%; /* centers buttons on the carousel, need it for absolute to work/buttons to show */
+  justify-content: space-between; 
+  position: absolute; 
+  top: 50%; 
   left: 5px;
   right: 5px;
   margin-left: auto;
