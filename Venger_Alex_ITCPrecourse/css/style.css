@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box;
+  /* includes padding and border in total width*/
+}
+
+html {
+  min-height: 100%;
+  min-width: 100%;
+  padding-bottom: 5%;
+  margin: 0;
+  min-width: 45rem;
+}
+
+body {
+  background: rgb(238, 174, 202);
+  background: linear-gradient(30deg, #eeaeca 0%, #94bbe9 150%);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+  font-weight: lighter;
+  min-height: 100%;
+  margin: 0;
+  padding-top: 10%;
+  font-size: 0.9rem;
+}
+
+/* nav */
+
+nav {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #060606;
+  color: whitesmoke;
+  z-index: 2;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  padding: 0rem 1rem;
+  width: 8rem;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+/* links */
+
+nav a:visited,
+footer a:visited {
+  color: whitesmoke;
+}
+
+li a:visited {
+  color: white;
+}
+li:hover {
+  background-color: rgba(148, 148, 152, 0.242);
+  border-radius: 5px;
+}
+.card-image li a:hover {
+  color: rgba(15, 14, 14, 0.918);
+}
+
+/* card */
+
+.card-container {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 3rem;
+  max-width: 80rem;
+  min-height: 30rem;
+}
+.card-image {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 1rem;
+}
+.card-text-box {
+  width: 50%;
+  position: relative;
+}
+.card-text {
+  text-align: left;
+  padding: 30px 30px 5px;
+  position: absolute;
+  bottom: 0;
+}
+
+.card-text p {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.card-image ul {
+  padding: 0;
+}
+.card-image li {
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.gradient-flow {
+  width: 50%;
+  background-image: linear-gradient(
+    to right,
+    #1d2b64 0%,
+    #f8cdda 51%,
+    #1d2b64 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+.gradient-flow:hover {
+  background-position: right center;
+  color: #fff;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 70%;
+  min-width: 230px;
+  max-width: 300px;
+}
+
+.my-button {
+  background-color: white;
+  border: none;
+  box-shadow: 0px 4px 5px rgba(66, 66, 67, 0.418);
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  border-radius: 10px;
+  border-bottom: 2px solid #d9d9d9;
+  outline: none;
+  color: #060606;
+}
+
+.my-button:hover {
+  box-shadow: 0px 15px 25px -5px rgba(66, 66, 67, 0.779);
+  transform: scale(1.03);
+}
+
+.my-button:active {
+  box-shadow: 0px 4px 8px rgba(66, 66, 67, 0.779);
+  transform: scale(0.98);
+}
+
+.my-button:disabled {
+  background-color: rgba(96, 96, 96, 0.246);
+  border-bottom: 2px solid #d9d9d92c;
+  color: #06060680;
+  box-shadow: none;
+  transform: none;
+  cursor: not-allowed;
+}
+
+/* about page */
+
+.about-text-container {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 45rem;
+  width: 60%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.coding-text,
+.education-text,
+.interests-text {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  padding: 10px;
+}
+
+/* carousel */
+
+.carousel-container {
+  padding-top: 5rem;
+}
+
+.carousel {
+  width: 80%;
+  min-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.carousel-item,
+.carousel-item-hidden {
+  display: none; /* hides images not being viewed */
+}
+
+.carousel-item-visible {
+  display: block; /* shows current image */
+}
+
+.carousel-item img {
+  max-width: 600px;
+  height: auto;
+}
+
+.carousel-actions {
+  display: flex;
+  width: 600px;
+  justify-content: space-between; /* put space between the buttons */
+  position: absolute; /* puts buttons on top of image carousel */
+  top: 50%; /* centers buttons on the carousel, need it for absolute to work/buttons to show */
+  left: 5px;
+  right: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-actions button {
+  border-radius: 50px;
+  background-color: white;
+  border: 0;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-actions button.disabled {
+  background-color: rgba(255, 255, 255, 0.31);
+  color: rgba(0, 0, 0, 0.354);
+  font-weight: bold;
+  cursor: not-allowed;
+}
+
+/*contact form*/
+
+.contact-container {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+fieldset,
+input,
+textarea,
+select {
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  margin: 5px;
+}
+
+input {
+  border-radius: 7px;
+}
+
+label {
+  display: block;
+  width: 50%;
+  margin: 5px;
+}
+
+.contact-button {
+  margin-top: 10px;
+}
+
+.comment-box {
+  height: 15rem;
+  width: 25rem;
+}
+.form-button {
+  margin-top: 3rem;
+}
+/* footer */
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #060606;
+  color: rgb(96, 96, 96);
+  font-size: 0.6rem;
+  padding: 6px;
+}

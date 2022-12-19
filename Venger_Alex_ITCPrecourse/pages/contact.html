@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link href="../css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="contact-page">
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+        <form
+          action="https://formspree.io/f/meqdyjva"
+          method="POST"
+          class="contact-form"
+        >
+          <fieldset>
+            <label for="firstname">First name:</label>
+            <input type="text" id="firstname" name="firstname" required />
+            <label for="lastname">Last name:</label>
+            <input type="text" id="lastname" name="lastname" />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="abtype">How did you hear about me?</label>
+            <select id="abtype" name="abtype" required>
+              <option>Select one</option>
+              <option value="option1">ITC classmate</option>
+              <option value="option2">Friend/colleage</option>
+              <option value="option3">Social media</option>
+              <option value="option4">Other</option>
+            </select>
+            <label for="comments">Comments:</label>
+            <textarea
+              id="comments"
+              name="comments"
+              placeholder="Add your comments here"
+              class="comment-box"
+              required
+            ></textarea>
+            <div class="contact-button">
+              <button
+                type="submit"
+                id="submit-button"
+                class="my-button"
+                disabled
+              >
+                Submit
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <footer>This page was built using: <span id="code-text"> </span></footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

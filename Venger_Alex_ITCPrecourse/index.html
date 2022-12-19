@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta data not in original code; added to head for browser functionality-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITC Precourse</title>
+    <link href="./css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <!-- syntax important for linking to different files/folders-->
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="main-page">
+      <div class="card-container">
+        <button type="button" class="gradient-flow">
+          <div class="card-image">
+            <img
+              src=""
+              id="profile-image"
+              alt="GitHub User avenger91"
+              class="profile-image"
+            />
+            <h2 id="profile-name"></h2>
+            <!-- id attribute added to insert JS data retreived; 
+            ids unique, classes not unique  -->
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/alexandra-venger/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/avenger91" target="_blank">
+                  <i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://stackoverflow.com/users/20675444/alex-venger"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-stack-overflow"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </button>
+        <div class="card-text-box">
+          <div class="card-text">
+            <h2>ITC Fullstack Development</h2>
+            <p>
+              Hi! Welcome to my ITC pre-course assignment webpage. I hope you
+              like it :)
+            </p>
+            <p>
+              Also check out my website! I made it using Wix and hope to learn
+              how to make it from scratch in this course :)
+            </p>
+            <br />
+            <a href="https://www.alexvenger.com" target="_blank">
+              <button type="button" class="my-button">My Website</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>This page was built using: <span id="code-text"> </span></footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
