@@ -8,10 +8,8 @@ fetch(GITHUB_URL)
   .then(function (data) {
     const profileImage = document.getElementById("profile-image");
     const profileName = document.getElementById("profile-name");
-    // update the profileImage and profileName with the information retrieved
     profileImage.src = data.avatar_url;
     profileName.innerHTML = data.name;
-    // using src and innerHTML properties to return data arguments avatar_url and name
   });
 
 // footer array []
@@ -25,7 +23,6 @@ document.getElementById("code-text").innerHTML =
   myCodeArray + " and " + addJava;
 
 // submit button using conditional if statements for each element/input;
-// submit button disabled unless all oninput events have user input
 
 let firstnameInput = false;
 let emailInput = false;
